@@ -12,6 +12,12 @@ a {
     color: inherit;
 }
 
+.container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
 body {
     background-color: black;
 }
@@ -98,8 +104,8 @@ aside hr {
 
 #custom-playlist li {
     white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
     height: 32px;
     width: 100%;
     padding: 5px 24px 0px 16px;
@@ -129,10 +135,76 @@ aside hr {
 }
 
 main {
-    background-color: blue;
+    background-image: linear-gradient(to bottom right, #000d9c, #5d63ac);
     width: calc(100% - 230px);
     height: calc(100vh - 100px);
     float: left;
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    width: calc(100% - 230px);
+    position: fixed;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-left {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-backforward {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #b3b3b3;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.nav-backforward svg {
+    height: 22px;
+    width: 22px;
+}
+
+#search {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 15px;
+}
+
+#header-right {
+    background-color:  rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 12px;
+    padding: 1px 1px;
+}
+
+#header-right img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+#header-right span {
+    margin: 0 8px;
+    font-size: 12px;
 }
 
 footer {
@@ -140,11 +212,4 @@ footer {
     height: 100px;
     width: 100%;
     float: left;
-}
-
-header {
-    background-color: purple;
-    height: 60px;
-    width: 100%;
-    position: fixed;
 }
