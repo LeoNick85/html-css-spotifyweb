@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    background-color: red;
+    width: 250px;
+    height: calc(100vh - 100px);
+    float: left;
+}
+
+main {
+    background-color: blue;
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+    float: left;
+}
+
+footer {
+    background-color: green;
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+
+header {
+    background-color: purple;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
