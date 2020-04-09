@@ -266,10 +266,76 @@ header .container {
     color: #b3b3b3;
 }
 
-
 footer {
     background-color: #282828;
     height: 100px;
     width: 100%;
     float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+}
+
+#footer-left {
+    background-color: red;
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#track-info {
+    height: 100%;
+    display: inline-block;
+    padding: 16px 10px;
+    color: white;
+    position: relative;
+}
+
+#footer-left i:hover {
+    font-family: "Font Awesome 5 Free";
+    color: #1db954;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+/* #track-info::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Pro";
+    color: #b3b3b3;
+    font-weight: 400;
+    font-size: 15px;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+}
+
+#track-info::after:hover {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    color: #1db954;
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+} */
+
+#track-info p:last-child {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+#footer-center {
+    background-color: red;
+    width: 450px;
+    height: 100%;
+}
+
+#footer-right {
+    background-color: red;
+    width: 260px;
+    height: 100%;
 }
