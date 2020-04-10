@@ -334,7 +334,11 @@ footer {
     color: #b3b3b3;
 }
 
-.btn-play:nth-child(3) {
+#footer-center .btn-play:nth-child(1) {
+    color: #1db954;
+}
+
+#footer-center .btn-play:nth-child(3) {
     border: 1px solid #b3b3b3;
     border-radius: 50%;
 }
@@ -355,7 +359,13 @@ footer {
 }
 
 #footer-right {
-    background-color: red;
     width: 260px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+#footer-right .btn-play {
+    margin-right: 2px;
 }
