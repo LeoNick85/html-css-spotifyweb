@@ -278,7 +278,6 @@ footer {
 }
 
 #footer-left {
-    background-color: red;
     height: 100%;
     padding: 16px;
     display: flex;
@@ -294,34 +293,19 @@ footer {
     position: relative;
 }
 
+#track-info p:nth-child(2) {
+    font-size: 12px;
+    color: #b3b3b3;
+    padding-top: 4px;
+}
+
 #footer-left i:hover {
     font-family: "Font Awesome 5 Free";
     color: #1db954;
     font-weight: 900;
     font-size: 15px;
 }
-
-/* #track-info::after {
-    content: "\f004";
-    font-family: "Font Awesome 5 Pro";
-    color: #b3b3b3;
-    font-weight: 400;
-    font-size: 15px;
-    position: absolute;
-    right: -16px;
-    top: 40%;
-}
-
-#track-info::after:hover {
-    content: "\f004";
-    font-family: "Font Awesome 5 Free";
-    color: #1db954;
-    font-weight: 900;
-    font-size: 15px;
-    position: absolute;
-    right: -16px;
-    top: 40%;
-} */
+/
 
 #track-info p:last-child {
     font-size: 12px;
@@ -329,9 +313,45 @@ footer {
 }
 
 #footer-center {
-    background-color: red;
     width: 450px;
     height: 100%;
+
+        text-align: center;
+}
+
+#player-btn {
+    text-align: center;
+    height: 50%;
+    padding-top: 15px;
+}
+
+.btn-play {
+    background-color: inherit;
+    border: none;
+    height: 32px;
+    width: 32px;
+    margin-right: 16px;
+    color: #b3b3b3;
+}
+
+.btn-play:nth-child(3) {
+    border: 1px solid #b3b3b3;
+    border-radius: 50%;
+}
+
+.btn-play:last-child {
+    margin-right: 0px;
+}
+
+#time-player {
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#track-player {
+    width: 380px;
 }
 
 #footer-right {
