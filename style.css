@@ -39,6 +39,15 @@ aside {
     color: white;
 }
 
+#logo-small {
+    display: none;
+}
+
+#logo-small img {
+    width: 55px;
+    margin-bottom: 16px;
+}
+
 ul {
     list-style-type: none;
 }
@@ -46,7 +55,7 @@ ul {
 #main-nav li:first-child {
     color: white;
     background-color: #282828;
-    border-radius: 5px;
+    border-left: 3px solid #1db954;
 }
 
 #main-nav li:hover {
@@ -91,7 +100,6 @@ aside h3 {
     color: white;
     cursor: pointer;
 }
-
 
 #btn-new-playlist {
     height: 32px;
@@ -158,6 +166,15 @@ aside hr {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hidden-menu {
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    padding-top:10px;
+    color: #b3b3b3;
+    display: none;
 }
 
 main {
@@ -293,6 +310,15 @@ header .container {
     position: relative;
 }
 
+.cat-element img {
+    width: 160px;
+    height: 160px;
+}
+
+.cat-element .cover-artist {
+    border-radius: 50%;
+}
+
 .cat-element:hover {
     cursor: pointer;
 }
@@ -373,8 +399,8 @@ footer {
 #footer-center {
     width: 450px;
     height: 100%;
-
-        text-align: center;
+    text-align: center;
+    padding: 0px 16px;
 }
 
 #player-btn {
@@ -417,7 +443,7 @@ footer {
 }
 
 #track-player {
-    width: 380px;
+    width: 350px;
 }
 
 #footer-right {
@@ -517,4 +543,60 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #c0c0c0;
+}
+
+@media all and (max-width: 992px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .hidden-xs {
+        display: none !important;
+    }
+
+    .visible-xs {
+        display: inline-block !important;
+    }
+
+    aside {
+        width: 60px;
+    }
+
+    main {
+        width: calc(100% - 60px);
+    }
+
+    header {
+        width: calc(100% - 60px);
+    }
+
+    footer {
+        justify-content: space-around;
+    }
+
+    #btn-fav-playlist, #btn-new-playlist {
+        margin-right: 0px;
+    }
+
+    #footer-center {
+        width: 250px;
+        padding: 0px 8px;
+    }
+
+    .btn-play {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+
+    #footer-center .btn-play:nth-child(3) {
+        border: 0;
+    }
+
+    #track-player {
+        width: 70px;
+    }
+
 }
