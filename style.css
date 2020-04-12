@@ -18,6 +18,26 @@ a {
     margin: auto;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #505050;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #646464;
+}
+
 body {
     background-color: black;
 }
@@ -363,6 +383,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+
+#footer-left img {
+    width: 60px;
+    height: 60px;
 }
 
 #track-info {
